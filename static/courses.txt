@@ -1,0 +1,18 @@
+McDonald's, Amiens
+KFC, Amiens
+Subway, Amiens
+Quick, Amiens
+Pizza Hut, Amiens
+Burger King, Rouen
+Domino's Pizza, Rouen
+Taco Bell, Rouen
+McDonald's, Paris
+Burger King, Paris
+Subway, Paris
+KFC, Paris
+Quick, Paris
+McDonald's, New-York
+Subway, New-York
+Taco Bell, New-York
+Pizza Hut, New-York
+Dunkin' Donuts, New-York

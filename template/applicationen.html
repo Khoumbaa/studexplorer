@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Lucas EVRARD, Alexia M'BOUMBA, Khoumba NDIAYE et  Benjamin DUROZELLE"/>
+    <meta name="description"
+          content=" Site web permettant aux étudiants d'avoir accès à une carte leur proposant des points d'intérêts utiles pour les aider durant leurs études."/>
+    <meta name="keywords"
+          content="carte, map, Amiens, restaurants, bibiliothèques, activités, parcs, étudiants, étude, CROUS, France, lieux, UPJV, Picardie, université, "/>
+    <title>STUDEXPLORER</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="icon" type="image/ico" href="{{ url_for('static', filename='images/favicon.ico') }}">
+</head>
+<body>
+<header>
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('chatbot_en') }}">Menu</a></li>
+			<li><a href="{{ url_for('faqen') }}">F.A.Q</a></li>
+			<li><a href="{{ url_for('pointen') }}">Add a point to the map</a></li>
+			<li><a href="{{ url_for('applicationen') }}">Download our application!</a></li>
+			<li><a href="{{ url_for('chatbot_es') }}" class="btn btn-primary">ES</a></li>
+			<li><a href="index.html" class="btn btn-primary">FR</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="app">
+        <div class="text-div">
+            <h1> Download our app! </h1>
+            <p>Available by clicking <a
+                    href="https://appstore.mobiroller.com/android-ios-market/travel/1907873/etudexplorer-mobile-application"><font
+                    color="#000000">HERE</font></a></p>
+        </div>
+    </div>
+</main>
+<footer>
+     <nav>
+       <ul>
+            <li><a href="https://www.instagram.com/studexplorer/" target="_blank"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram" width="25"></a></li>
+        </ul>
+    </nav>
+    <p>
+        Cliquez <a href="mailto:studexplorer@gmail.com" target="_blank"> <i>ici</i> </a> pour nous contacter
+    </p>
+    <p>
+        Copyright © : Site Web fait par Khoumba NDIAYE, Benjamin DUROZELLE, Lucas EVRARD et Alexia M'BOUBA
+    </p>
+</footer>
+</body>
+</html>

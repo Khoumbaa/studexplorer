@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Lucas EVRARD, Alexia M'BOUMBA, Khoumba NDIAYE, and Benjamin DUROZELLE"/>
+    <meta name="description"
+          content="Website allowing students to access a map offering useful points of interest to assist them during their studies."/>
+    <meta name="keywords"
+          content="map, Amiens, restaurants, libraries, activities, parks, students, study, CROUS, France, places, UPJV, Picardy, university"/>
+    <title>STUDEXPLORER</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="icon" type="image/ico" href="{{ url_for('static', filename='images/favicon.ico') }}">
+</head>
+<body><header>
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('chatbot_en') }}">Menu</a></li>
+			<li><a href="{{ url_for('faqen') }}">F.A.Q</a></li>
+			<li><a href="{{ url_for('pointen') }}">Add a point to the map</a></li>
+			<li><a href="{{ url_for('applicationen') }}">Download our application!</a></li>
+			<li><a href="{{ url_for('chatbot_es') }}" class="btn btn-primary">ES</a></li>
+			<li><a href="index.html" class="btn btn-primary">FR</a></li>
+
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="container">
+        <div id="map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1mGUoh93Etgkm1itsEeXdfN0sJcniLYk" width="640"
+                    height="500"></iframe>
+        </div>
+        <div id="text">
+            <div class="text-div">
+                <h2>How do I use the map?</h2>
+                <p>The map shows you various points of interest that could be useful to you as a
+                    student.</p>
+                <p>You have access to filters that allow you to display only what interests you.</p>
+                <p>Drag your two fingers across the map to zoom in and move your position, or click
+                    simply press the + and - buttons.</br>
+                    Clicking on a point of interest displays all the information about it.</p>
+            </div>
+        </div>
+    </div>
+    <div class="chat-container">
+    <form method="post" action="/indexen.html"">
+        <label for="user_input"> Choose an option</label>
+        <button type="submit" name="user_input" value="I want to find a cheap place to">I want to find a cheap place to </button>
+        <button type="submit" name="user_input" value="Contact us">Contact us</button>
+        <button type="submit" name="user_input" value="Report an error">Report an error</button>
+    </form>
+
+    {% if show_text_input %}
+        <form method="post" action="/indexen.html"">
+            <label for="city">Name of the city</label>
+            <input type="text" name="city" required>
+            <button type="submit" name="user_input" value="etudier">Study</button>
+            <button type="submit" name="user_input" value="fastfood">Eat</button>
+            <button type="submit" name="user_input" value="divertissement">Have fun</button>
+            <button type="submit" name="user_input" value="sport">Play sports/workout</button>
+            <button type="submit" name="user_input" value="supermarches">Go grocery shopping</button>
+        </form>
+    {% endif %}
+    {% if recommendations %}
+        <h2>Results :</h2>
+        <ul>
+            {% for place in recommendations %}
+               <li>{{ place[0] }} - {{ place[1] }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    {% if contact_creators_text %}
+        <h2>Contact us</h2>
+        <p>{{ contact_creators_text }}</p>
+    {% endif %}
+
+    {% if report_error_text %}
+         <h2>Report an error</h2>
+         <p>{{ report_error_text }}</p>
+    {% endif %}
+</div>
+
+</main>
+<footer>
+     <nav>
+       <ul>
+            <li><a href="https://www.instagram.com/studexplorer/" target="_blank"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram" width="25"></a></li>
+        </ul>
+    </nav>
+    <p>
+		Click <a href="mailto:studexplorer@gmail.com" target="_blank"> <i>here</i> </a> to contact us
+    </p>
+    <p>
+Copyright ©: Website made by Khoumba NDIAYE, Benjamin DUROZELLE, Lucas EVRARD, and Alexia M'BOUBA
+    </p>
+</footer>
+</body>
+</html>

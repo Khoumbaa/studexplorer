@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Lucas EVRARD, Alexia M'BOUMBA, Khoumba NDIAYE y Benjamin DUROZELLE"/>
+    <meta name="description"
+          content=" Sitio web que permite a los estudiantes acceder a un mapa que les ofrece puntos de interés útiles para ayudarlos durante sus estudios."/>
+    <meta name="keywords"
+          content="mapa, Amiens, restaurantes, bibliotecas, actividades, parques, estudiantes, estudio, CROUS, Francia, lugares, UPJV, Picardía, universidad"/>
+    <title>STUDEXPLORER</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="icon" type="image/ico" href="{{ url_for('static', filename='images/favicon.ico') }}">
+</head>
+<body>
+<header>
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('chatbot_es') }}">Menú</a></li>
+            <li><a href="{{ url_for('faqes') }}">Preguntas frecuentes (QnA)</a></li>
+            <li><a href="{{ url_for('pointes') }}">Agregar un punto al mapa</a></li>
+            <li><a href="{{ url_for('applicationes') }}">¡Descarga nuestra aplicación!</a></li>
+            <li><a href="{{ url_for('chatbot_en') }}" class="btn btn-primary">EN</a></li>
+            <li><a href="index.html" class="btn btn-primary">FR</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="app">
+        <div class="text-div">
+            <h1> Descargue nuestra aplicación </h1>
+            <p>Disponible haciendo clic en <a
+                    href="https://appstore.mobiroller.com/android-ios-market/travel/1907873/etudexplorer-mobile-application"><font
+                    color="#000000">Aquí</font></a></p>
+        </div>
+    </div>
+</main>
+<footer>
+     <nav>
+       <ul>
+            <li><a href="https://www.instagram.com/studexplorer/" target="_blank"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram" width="25"></a></li>
+        </ul>
+    </nav>
+     <p>
+        Haga clic <a href="mailto:studexplorer@gmail.com" target="_blank"> <i>aquí</i> </a> para contactarnos
+
+    </p>
+    <p>
+        Copyright © : Sitio web creado por Khoumba NDIAYE, Benjamin DUROZELLE, Lucas EVRARD y Alexia M'BOUBA
+    </p>
+</footer>
+</body>
+</html>

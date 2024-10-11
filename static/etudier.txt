@@ -1,0 +1,40 @@
+Pôle de Médecine de Pharmacie et de Maïeutique (3 Rue des Louvels), Amiens
+Pôle de Sciences (33 Rue Saint-Leu), Amiens
+Pôle d'Économie et de Gestion (21 Rue du Moulin Neuf), Amiens
+Pôle de Droit et de Science Politique (10 Rue des Français Libres), Amiens
+Pôle des Sciences Humaines et Sociales (10 Rue des Français Libres), Amiens
+Pôle de Langues et de Cultures Étrangères (10 Rue des Français Libres), Amiens
+Pôle de Lettres et de Sciences Humaines (10 Rue des Français Libres), Amiens
+Pôle de Psychologie Sociologie Anthropologie (10 Rue des Français Libres), Amiens
+Pôle STAPS (10 Rue des Français Libres), Amiens
+Pôle de Sciences de l'Éducation et de la Formation (10 Rue des Français Libres), Amiens
+Pôle de Sciences Juridiques Politiques et Sociales (1 Place Déliot), Lille
+Pôle de Sciences Économiques et de Gestion (104 Avenue du Peuple Belge), Lille
+Pôle de Lettres Langues Arts et Sciences Humaines (3 Rue Roland), Lille
+Pôle de Sciences Humaines et Sociales (1 Place Déliot), Lille
+Pôle Santé (42 Rue Paul Duez), Lille
+Pôle de Sciences et Technologies (Cité Scientifique Avenue Henri Poincaré), Villeneuve-d'Ascq
+Pôle de Mathématiques et d'Informatique (Cité Scientifique Avenue Henri Poincaré), Villeneuve-d'Ascq
+Pôle de Médecine et Maïeutique (1 Rue Eugène Avinée), Lille
+Pôle de Pharmacie (3 Rue du Professeur Laguesse), Lille
+Pôle des Sciences et Techniques des Activités Physiques et Sportives (9 Rue de l'Université), Ronchin
+Pôle de Droit d'Économie et de Gestion (Avenue Pasteur), Rouen
+Pôle de Lettres et de Sciences Humaines (Rue Lavoisier), Mont-Saint-Aignan
+Pôle des Sciences et Techniques (Avenue de l'Université), Saint-Étienne-du-Rouvray
+Pôle de Médecine et de Pharmacie (22 Boulevard Gambetta), Rouen
+Pôle de Psychologie et de Sciences de l'Éducation (Rue Tilly), Mont-Saint-Aignan
+Pôle des Sciences de l'Éducation (5 Rue Thérèse Delapierre), Mont-Saint-Aignan
+Pôle Santé (22 Boulevard Gambetta), Rouen
+Pôle de Géographie d'Aménagement et d'Environnement (Rue Lavoisier), Mont-Saint-Aignan
+Pôle de Sciences du Sport et de l'Éducation Physique (Rue du Tronquet), Mont-Saint-Aignan
+Pôle d'Informatique et de Mathématiques (Avenue de l'Université), Saint-Étienne-du-Rouvray
+Université Paris 1 Panthéon-Sorbonne (12 Place du Panthéon), Paris
+Université Paris 2 Panthéon-Assas (12 Place du Panthéon), Paris
+Université Paris 3 Sorbonne Nouvelle (13 Rue de Santeuil), Paris
+Université Paris-Sorbonne (Paris 4) (1 Rue Victor Cousin), Paris
+Université Paris Descartes (Paris 5) (12 Rue de l'École de Médecine), Paris
+Université Paris Diderot (Paris 7) (5 Rue Thomas Mann), Paris
+Université Paris-Saclay (Avenue du Président Wilson), Cachan
+Université Paris Nanterre (Paris 10) (200 Avenue de la République), Nanterre
+Université Paris-Est Créteil (Paris 12) (61 Avenue du Général de Gaulle), Créteil Cedex
+Université Paris 13 (99 Avenue Jean-Baptiste Clément), Villetaneuse

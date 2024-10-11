@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Lucas EVRARD, Alexia M'BOUMBA, Khoumba NDIAYE et  Benjamin DUROZELLE"/>
+    <meta name="description"
+          content=" Site web permettant aux étudiants d'avoir accès à une carte leur proposant des points d'intérêts utiles pour les aider durant leurs études."/>
+    <meta name="keywords"
+          content="carte, map, Amiens, restaurants, bibiliothèques, activités, parcs, étudiants, étude, CROUS, France, lieux, UPJV, Picardie, université, "/>
+    <title>STUDEXPLORER</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="icon" type="image/ico" href="{{ url_for('static', filename='images/favicon.ico') }}">
+</head>
+<body>
+<header>
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('chatbot_en') }}">Menu</a></li>
+			<li><a href="{{ url_for('faqen') }}">F.A.Q</a></li>
+			<li><a href="{{ url_for('pointen') }}">Add a point to the map</a></li>
+			<li><a href="{{ url_for('applicationen') }}">Download our application!</a></li>
+			<li><a href="{{ url_for('chatbot_es') }}" class="btn btn-primary">ES</a></li>
+			<li><a href="index.html" class="btn btn-primary">FR</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="faq">
+        <div class="faq-item">
+            <h1 class="faq-question"> Qui sommes nous ? </h1>
+            <div class="faq-answer">
+                <p> Lucas EVRARD, Khoumba NDIAYE, Benjamin DUROZELLE, Alexia M'BOUMBA
+                    Master 2 E-Business Innovation Management students.
+                <p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <h1 class="faq-question"> What is the purpose of STUDEXPLORER? </h1>
+            <div class="faq-answer">
+                <p> The aim of ETUDEXPLORER is to help students find places that could help them with their studies
+                    or help them enjoy themselves even on a small budget.
+                    The purpose of the map is to show you the places where you can take advantage of student discounts, of
+                    low prices or free places to have fun, buy what you need and eat.
+
+                    We also offer you an automatic suggestion of places according to the type of place you are looking for
+                    and the city you are in.
+                <p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <h1 class="faq-question"> You know of a point of interest and want to suggest it to us. </h1>
+            <div class="faq-answer">
+                <p> It's so simple!<br>
+                    Just click <a href="point.html"><font color="#000000">here</font> </a> to send us your
+                   recommendations !
+                    Send us the coordinates of the point and a short text explaining how this point could
+                    be of interest to us, we'll analyse it and add it to the map if it's accepted!
+                <p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <h1 class="faq-question"> What can I do if not all the points are displayed? </h1>
+            <div class="faq-answer">
+                <p> Check that there is no active filter on the card and reload the page.
+                    If the problem persists, please contact us by e-mail or on the networks.</p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+     <nav>
+       <ul>
+            <li><a href="https://www.instagram.com/studexplorer/" target="_blank"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram" width="25"></a></li>
+        </ul>
+    </nav>
+    <p>
+        Cliquez <a href="mailto:studexplorer@gmail.com" target="_blank"> <i>ici</i> </a> pour nous contacter
+    </p>
+    <p>
+        Copyright © : Site Web fait par Khoumba NDIAYE, Benjamin DUROZELLE, Lucas EVRARD et Alexia M'BOUBA
+    </p>
+</footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const questions = document.querySelectorAll('.faq-question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const arrow = question.querySelector('.arrow');
+
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                question.classList.toggle('active');
+            });
+        });
+    });
+
+</script>
+</html>
